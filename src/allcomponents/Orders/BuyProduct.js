@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import userContext from '../../context/user/userContext';
 import { toast } from 'react-toastify';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -11,6 +11,32 @@ const BuyProduct = (props) => {
 
     const navigate = useNavigate(null);
     const shouldDo = useRef(true);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //     if (!localStorage.getItem("myjewelacctoken")) {
+    //         if (shouldDo.current) {
+    //             toast.warn('To access this feature, please logged in first', {
+    //                 position: "top-center",
+    //                 autoClose: 5000,
+    //                 hideProgressBar: false,
+    //                 closeOnClick: true,
+    //                 pauseOnHover: true,
+    //                 draggable: true,
+    //                 progress: undefined,
+    //                 theme: "light",
+    //                 shouldDo.current = false;
+    //             }
+    //         navigate("/userlogin");
+    //             return;
+    //         }
+
+    //         if (state.weight === undefined) {
+    //             navigate("/");
+    //             return;
+    //         }
+    //         // eslint-disable-next-line
+    //     }, []);
+
     useEffect(() => {
         window.scrollTo(0, 0);
         if (!localStorage.getItem("myjewelacctoken")) {
@@ -30,13 +56,12 @@ const BuyProduct = (props) => {
             navigate("/userlogin");
             return;
         }
-
         if (state.weight === undefined) {
             navigate("/");
             return;
         }
         // eslint-disable-next-line
-    }, []);
+    })
 
     useEffect(() => {
         document.title = "Buy Product - MJS";
@@ -121,7 +146,7 @@ const BuyProduct = (props) => {
                     progress: undefined,
                     theme: "light",
                 });
-                
+
                 return;
             }
         }

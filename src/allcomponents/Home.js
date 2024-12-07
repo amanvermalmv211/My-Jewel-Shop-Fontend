@@ -43,7 +43,7 @@ const Home = (props) => {
                                 <img src="https://cdn.shopify.com/s/files/1/0985/9548/products/Silver_Payal_Online_AN034_2_1000x1000.jpg" alt="" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                             </Link>
                             <Link to={"/chain"} data-aos="fade-up" data-aos-duration="500" className="w-32 lg:w-40 h-32  overflow-hidden rounded-xl group relative">
-                                <img src="http://www.styleswardrobe.com/wp-content/uploads/2016/08/Gold-Chains-6.jpg" alt="" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                                <img src="https://5.imimg.com/data5/SELLER/Default/2022/5/KO/YI/DR/117732572/e283776f-8898-43f0-84d2-66d9c1240d2f-500x500.jpg" alt="" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
                             </Link>
                         </div>
                         <Link to={"/giftitem"} data-aos="fade-up" data-aos-duration="500" className="lg:w-40 w-64 h-40  overflow-hidden rounded-xl group relative">
