@@ -18,7 +18,7 @@ This is the **frontend** of the **My Jewel Shop** e-commerce website built using
 
 ---
 
-## 🛠️ Tech Stack
+## 🧑🏻‍💻 Tech Stack
 
 - **Frontend**: React, JSX  
 - **Styling**: Tailwind CSS  
